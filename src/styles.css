@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar and Hero Section Shared Background */
+.background {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(255, 0, 0, 0.5) 50%),
+                url('./Assets/Images/model-x\(1\).webp');
+    background-size: cover;        /* Ensures the image covers the full container */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 18px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: white;
+    color: black;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+
+.content {
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* gap: 10%; */
+}
+
+.new-launch {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.product-name {
+    font-size: 70px;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.product-category {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.specs {
+    margin-bottom: 20px;
+}
+
+.specs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.specs ul li {
+    margin: 5px 0;
+    padding: 5px 0px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.red-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    max-width: 150px;
+}
+
+/* New Arrivals Section */
+.new-arrivals-section {
+    background: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    max-width: 200px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
